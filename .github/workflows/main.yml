@@ -10,7 +10,16 @@ jobs:
         with:
           client_id: ${{ secrets.SOOS_CLIENT_ID }}
           api_key: ${{ secrets.SOOS_API_KEY }}
-          project_name: "GH-DAST only"
+          project_name: "GH-DAST wait for pass"
           scan_mode: "baseline"
-          target_url: "https://defendtheweb.net/"
-          api_url: "https://qa-api.soos.io/api/"
+          auth_form_type: 'wait_for_password'
+          target_url: 'https://joaquinalvarez.dev/'
+          api_url: 'https://qa-api.soos.io/api/'          
+          auth_login_url: 'https://joaquinalvarez.dev/'   
+          auth_username: 'franco'
+          auth_password: 'waitforpassword'
+          auth_username_field: 'username'
+          auth_password_field: 'password'
+          auth_submit_field: 'button'
+          on_failure: 'continue_on_failure'
+          bearer_token: 'eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJ1cm46U09PUzpDbGllbnRIYXNoIjoiYWFpY210Y3pxIiwidXJuOlNPT1M6VXNlcklkZW50aWZpZXIiOiJhMjhiMmRjNi01OGVkLTQxYmEtOWI4Yy0xZjUyNzM2NWMwZGMiLCJ1cm46U09PUzpVc2VyUm9sZSI6IkFkbWluaXN0cmF0b3IiLCJ1cm46U09PUzpVc2VyQ2hlY2siOiJlODQ0YjVlMy1mMWZlLTQ5OTMtODQwNi0xNmZjMDI4ZDM0MTkiLCJleHAiOjE2OTA2MzM2NDcsImlzcyI6Imh0dHBzOi8vcWEtYXBwLnNvb3MuaW8vIiwiYXVkIjoiaHR0cHM6Ly9xYS1hcHAuc29vcy5pby8ifQ.1nwpwdR9-EaVGePCrshZhrND705vSLqEv8XQ9P4uRoU'
