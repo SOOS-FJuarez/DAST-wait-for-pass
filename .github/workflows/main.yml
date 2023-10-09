@@ -6,18 +6,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run SOOS DAST Baseline Analysis
-        uses: soos-io/soos-dast-github-action@alpha #7 GET Latest Version from https://github.com/marketplace/actions/soos-dast
+        uses: soos-io/soos-dast-github-action@alpha # GET Latest Version from https://github.com/marketplace/actions/soos-dast
         with:
           client_id: ${{ secrets.SOOS_CLIENT_ID }}
           api_key: ${{ secrets.SOOS_API_KEY }}
-          project_name: 'DAST QA - wait for password'          
-          auth_form_type: 'wait_for_password'
-          target_url: 'https://joaquinalvarez.dev/'
-          api_url: 'https://qa-api.soos.io/api/'          
-          auth_login_url: 'https://joaquinalvarez.dev/'                  
-          auth_username: 'franco'        
-          auth_password: 'waitforpassword'        
-          auth_username_field: 'username'        
-          auth_password_field: 'password'          
-          auth_submit_field: 'button'
-          
+          api_url: "https://qa-api.soos.io/api/"
+          project_name: "GH Actions - DAST Simple"
+          scan_mode: "baseline"
+          target_url: "https://defendtheweb.net/"
