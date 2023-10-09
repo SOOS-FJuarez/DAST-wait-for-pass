@@ -8,9 +8,16 @@ jobs:
       - name: Run SOOS DAST Baseline Analysis
         uses: soos-io/soos-dast-github-action@alpha # GET Latest Version from https://github.com/marketplace/actions/soos-dast
         with:
+
           client_id: ${{ secrets.SOOS_CLIENT_ID }}
           api_key: ${{ secrets.SOOS_API_KEY }}
-          api_url: "https://qa-api.soos.io/api/"
-          project_name: "GH Actions - DAST Simple"
-          scan_mode: "baseline"
-          target_url: "https://docs.cypress.io/"
+          project_name: 'GH Actions - DAST wait for password'          
+          auth_form_type: 'wait_for_password'
+          target_url: 'https://joaquinalvarez.dev/'
+          api_url: 'https://qa-api.soos.io/api/'          
+          auth_login_url: 'https://joaquinalvarez.dev/'                  
+          auth_username: 'franco'        
+          auth_password: 'waitforpassword'        
+          auth_username_field: 'username'        
+          auth_password_field: 'password'          
+          auth_submit_field: 'button'
