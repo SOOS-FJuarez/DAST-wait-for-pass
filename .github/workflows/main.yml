@@ -13,8 +13,8 @@ jobs:
           api_key: ${{ secrets.SOOS_API_KEY }}
           project_name: 'GH-Actions-DAST-wait-for-password'
           auth_form_type: 'wait_for_password'
-          target_url: 
-          api_url: 'https://qa-api.soos.io/api/'          
+          target_url: 'https://joaquinalvarez.dev/'
+          api_url: 'https://api.soos.io/api/'          
           auth_login_url: 'https://joaquinalvarez.dev/'                  
           auth_username: 'franco'        
           auth_password: 'P4ssw0rd!'        
