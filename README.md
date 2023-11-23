@@ -1,3 +1,3 @@
 # github-actions-DAST
 
-test yahooopoo logged in qa
+test yahoo logged in qa
