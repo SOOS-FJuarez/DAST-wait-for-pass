@@ -16,8 +16,8 @@ jobs:
           target_url: 'https://demoqa.com/profile'
           api_url: 'https://qa-api.soos.io/api/'          
           auth_login_url: 'https://demoqa.com/login'                  
-          auth_username: 'franco-testing'        
-          auth_password: 'Password1!'        
+          auth_username: 'franco'        
+          auth_password:         
           auth_username_field: 'username'        
           auth_password_field: 'password'          
           auth_submit_field: 'login'
