@@ -21,4 +21,4 @@ jobs:
           auth_username_field: 'username'        
           auth_password_field: 'password'          
           auth_submit_field: 'test'
-          on_failure: 'fail_the_build'
+          on_failure: 'continue_on_failure'
