@@ -11,7 +11,7 @@ jobs:
 
           client_id: ${{ secrets.SOOS_CLIENT_ID }}
           api_key: ${{ secrets.SOOS_API_KEY }}
-          project_name: 'GH-Actions-DAST-wait-for-password'
+          project_name:
           scan_mode: 'baseline'
           auth_form_type: 'wait_for_password'
           target_url: 'https://joaquinalvarez.dev/'
