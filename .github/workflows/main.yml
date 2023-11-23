@@ -19,6 +19,6 @@ jobs:
           auth_username: 'franco'        
           auth_password: 'Password1!'        
           auth_username_field: 'username'        
-          auth_password_field:           
-          auth_submit_field: 'login'
+          auth_password_field: 'password'          
+          auth_submit_field: 'test'
           on_failure: 'continue_on_failure'
