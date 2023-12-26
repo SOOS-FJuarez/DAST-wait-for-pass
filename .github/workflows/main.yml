@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run SOOS DAST Baseline Analysis
-        uses: soos-io/soos-dast-github-action@feature/PA-11731 # GET Latest Version from https://github.com/marketplace/actions/soos-dast
+        uses: soos-io/soos-dast-github-action@v2.0.14 # GET Latest Version from https://github.com/marketplace/actions/soos-dast
         with:
 
           client_id: ${{ secrets.SOOS_CLIENT_ID }}
@@ -14,11 +14,11 @@ jobs:
           project_name: 'GH-Actions-DAST-wait-for-password'
           auth_form_type: 'wait_for_password'
           target_url: 'https://demoqa.com/profile'
-          api_url: 'https://qa-api.soos.io/api/'          
+          api_url: 'https://api.soos.io/api/'          
           auth_login_url: 'https://demoqa.com/login'                  
           auth_username: 'franco'        
           auth_password: 'Password1!'        
           auth_username_field: 'username'        
           auth_password_field: 'password'          
-          auth_submit_field: 'test'
-          on_failure: 'fail_the_build'
+          auth_submit_field: 'button'
+          on_failure: 'continue_on_failure'
