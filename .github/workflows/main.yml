@@ -17,5 +17,9 @@ jobs:
           api_url: 'https://qa-api.soos.io/api/'          
           auth_login_url: 'https://joaquinalvarez.dev/'                  
           auth_username: 'franco'        
-          auth_password: 'P4ssw0rd!'        
+          auth_password: 'P4ssw0rd!'
+          auth_username_field: 'username'        
+          auth_password_field: 'password'          
+          auth_submit_field: 'button'
+          on_failure: 'continue_on_failure'
 
