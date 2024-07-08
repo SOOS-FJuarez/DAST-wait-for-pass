@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run SOOS DAST Baseline Analysis
-        uses: soos-io/soos-dast-github-action@fix/PA-13914-qa # GET Latest Version from https://github.com/marketplace/actions/soos-dast
+        uses: soos-io/soos-dast-github-action@v2.0.6 # GET Latest Version from https://github.com/marketplace/actions/soos-dast
         with:
 
           client_id: ${{ secrets.SOOS_CLIENT_ID }}
@@ -18,7 +18,4 @@ jobs:
           auth_login_url: 'https://joaquinalvarez.dev/'                  
           auth_username: 'franco'        
           auth_password: 'P4ssw0rd!'        
-          auth_username_field: 'username'        
-          auth_password_field: 'password'          
-          auth_submit_field: 'button'
-          on_failure: 'continue_on_failure'
+
